@@ -1,5 +1,5 @@
 import unittest
-from main import RoomStudentMerger
+from student_rooms.merger import RoomStudentMerger
 
 
 class TestRoomStudentMerger(unittest.TestCase):
@@ -53,7 +53,7 @@ class TestRoomStudentMerger(unittest.TestCase):
         merger = RoomStudentMerger([], students)
         merged = merger.merge()
 
-        self.assertEqual(len(merged), 1)  # только Unassigned
+        self.assertEqual(len(merged), 1)  # Unassigned
         self.assertEqual(merged[0]["id"], "unassigned")
         self.assertEqual(len(merged[0]["students"]), 2)
         names = [s["name"] for s in merged[0]["students"]]
