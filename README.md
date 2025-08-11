@@ -4,7 +4,7 @@ cd <PROJECT_FOLDER>
 ```
 Launch:
 ```bash
-python -m student_rooms.cli <rooms.json> <students.json> [--format json|xml] [--output файл]
+python -m student_rooms.cli <rooms.json> <students.json> [--format json|xml] [--output file]
 ```
 Export to JSON:
 ```bash
